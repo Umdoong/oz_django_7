@@ -12,8 +12,8 @@ jobs:
       DB_HOST: 127.0.0.1
       DB_PORT: 3306
       DB_USER: root
-      DB_PASSWORD: 1234
-      DB_DATABASE: oz_django
+      DB_PASSWORD: 0000
+      DB_DATABASE: oz_django_7
 
     steps:
         # 체크아웃 해야 최신 코드를 가져옴
@@ -68,7 +68,3 @@ jobs:
       - name: Test python project
         run: |
           poetry run python manage.py test
-
-      - name: Test python project
-        run: |
-          poetry run python manage.py runserver
