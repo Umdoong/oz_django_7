@@ -54,12 +54,12 @@ jobs:
       - name: Run black
         run: |
           poetry run black . --check
-        # black으로 코드를 수정하지 않고 체크만 함
+        # --check: 코드를 수정하지 않고 체크만 함
 
       - name: Run isort
         run: |
           poetry run isort . --check --diff
-        # isort도 체크만 하도록 함. -diff: 달라진 점을 보여줌
+        # -diff: 달라진 점을 보여줌
 
       - name: Run Mypy
         run: |
