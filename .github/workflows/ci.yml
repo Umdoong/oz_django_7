@@ -65,8 +65,8 @@ jobs:
         run: |
           poetry run mypy .
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+#      - name: Setup tmate session 깃헙 디버깅
+#        uses: mxschmitt/action-tmate@v3
 
       - name: Test python project
         run: |
